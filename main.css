@@ -129,8 +129,9 @@ article{
 .icon{
 	width: 10vh;
 	margin: 0 auto;
-	margin-left: 45%;
 	margin-top: 3%;
+	align:center;
+
 }
 
 .icon span{
@@ -148,7 +149,7 @@ img{
 
 
 
-/*본문--------------------------------------*/
+/*본문끝-------------------------------------*/
 
 
 @media ( max-width: 1400px) {
@@ -184,7 +185,7 @@ img{
 @media ( max-width: 500px){
 .icon{
 	margin: 0 auto;
-	margin-left: 23%;
+	margin-left: 20%;
 	margin-top: 3%;
 }
 
@@ -195,18 +196,10 @@ img{
 	background-color: rgba(255,255,255,0.2);
 }
 
-img{
-	border-radius: 100%;
-	display: block;
-}
-
 .nav{
 	margin: 0 auto;
 	display: block;
 }
 
-li,li a{
-	display: block;
-}
 
 }
