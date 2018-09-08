@@ -157,7 +157,7 @@ img{
 	width: 100%;
 	font-size: 1rem;
 	text-align: center;
-	margin-left: 0;
+	margin: 0 auto;
 }
 .nav{
 	width: 100%;
@@ -186,7 +186,6 @@ img{
 	.icon{
 	width: 10vh;
 	margin: 0 auto;
-	margin-left: 30%;
 	margin-top: 3%;
 }
 
@@ -202,6 +201,13 @@ img{
 	display: block;
 }
 
+.nav{
+	margin: 0 auto;
+	display: block;
+}
 
+li,li a{
+	display: block;
+}
 
 }
