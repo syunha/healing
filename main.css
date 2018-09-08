@@ -182,10 +182,10 @@ img{
 }
 
 @media ( max-width: 500px){
-
-	.icon{
+.icon{
 	width: 10vh;
 	margin: 0 auto;
+	margin-left: 30%;
 	margin-top: 3%;
 }
 
