@@ -1,0 +1,278 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial,"맑은 고딕","sans-seif";
+    font-size: 2vh;
+    position: relative;
+    
+}
+
+/*본문*/
+.container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+/*
+.container {
+  background-image: url("../image/about_background.png");
+  height: 100vh; /*ㅠ100%일때 안먹혔는데 vh로 바꾸니까 됏당.
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+   background-size: 32%;
+}*/
+
+#background{
+	width:  64vh;
+	position: absolute;
+    bottom: 0px;
+    right: 4vh;
+}
+
+
+/*상단메뉴바--------------------------------------*/
+header{
+	background-color: #f4f4f4;
+}
+
+.title{
+	float:left;
+	width: 30%;
+	font-size: 0.8rem;
+	margin-left: 20%;
+}
+.nav{
+	float: left;
+	width: 50%;
+	margin-left: -20%;
+
+}
+.music{
+	float:left;
+	width: 20%;
+}
+header:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+ a:link { color: black; text-decoration: none;}
+ a:visited { color: black; text-decoration: none;}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+
+}
+
+
+li a, .dropbtn {						/*1.?*/
+    display: inline-block;
+    color: #859857;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-family: '맑은 고딕';
+    font-weight:bold;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #4a8469;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/*상단메뉴바끝--------------------------------------*/
+
+/*
+.content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
+
+
+
+/*본문---------------------------------------------*/
+/*본문제목-------------------------------------*/
+.article_title{
+	font-size: 0.8vh;
+}
+.article_title span{
+	color: #bebbb8;
+}
+/*본문내용-------------------------------------*/
+.article_one img{
+	width: 20%;
+	float:left;
+
+}
+.imfor1{
+	display: inline-block;
+	color: #356d56;
+	font-size: 1.1vh;
+	font-weight: bold;
+	font-family: "맑은 고딕";
+	margin-left: 1vh;
+}
+
+.article_one:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+/*본문내용-------------------------------------*/
+.article_two img{
+	width: 30%;
+}
+.imfor2,.article_text{
+	color: #859857;
+	font-size: 1.2vh;
+	font-weight: bold;
+	font-family: "맑은 고딕";
+	writing-mode: tb-rl;
+	display: block;
+	 line-height:1.8rem
+}
+
+
+.a{
+	float:left;
+	width: 40%;
+	margin-right: -14.8%;
+}
+
+
+.b{
+	float:left;
+width: 7%;
+margin-right: 9%;
+margin-left: 1%;
+}
+
+
+.c{
+	float:left;
+width: 53%;
+margin-top: 7%;
+
+}
+
+.content:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+
+.article_two{
+	margin-top: 2%;
+
+}
+/*footer*/
+footer{
+	color: #4e7f6b;
+	font-size: 1vh;
+	text-align: center;
+	margin-top: 6vh;
+}
+/*미디어쿼리-------------------------------------------*/
+@media ( min-width: 900px) {
+.content{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	top:5%;
+	border: 0.8vh solid #859857;
+	padding-left: 7%;
+	margin-top: 5vh;
+	padding-top: 7vh;
+
+}
+}
+
+
+@media ( max-width: 1400px) {
+/*미디어쿼리 헤더부분 ----------------------------------------*/
+.title{
+	width: 100%;
+	font-size: 1rem;
+	text-align: center;
+	margin: 0 auto;
+}
+.nav{
+	width: 100%;
+	font-size: 0.8rem;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.nav ul{
+	text-align: center;
+	margin-left: 25%;
+}
+
+.music{
+	width: 100%;
+	margin:0 auto;
+	display: none;
+}
+
+
+@media ( max-width: 1000px){
+	#background{
+		display: none;
+	}
+}
+
+@media ( max-width: 600px){
+	.article_two{
+		display: none;
+	}
+}
