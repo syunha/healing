@@ -5,26 +5,32 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
 </head>
 <body>
 	<!--배경동영상-------------->
 	<video autoplay muted loop id="myVideo">
-	  <source src="background.mp4" type="video/mp4">
+	  <source src="../image/background.mp4" type="video/mp4">
 	  Your browser does not support HTML5 video.
 	</video>
 	<!--본문------------------->
 	<div class="container">
 		<header>
-			<div class="title"><h1><a href="https://syunha.github.io/healing/main.html">GreenLeaf</a></h1></div>
+			<div class="title">
+				<h1><a href=#>GreenLeaf</a></h1>
+			</div>
 			<div class="nav">
 				<ul>
-				  <li><a href="https://syunha.github.io/healing/about.html">ABOUT</a></li>
+				  <li><a href="#home">ABOUT</a></li>
 				  <li><a href="#news">HOWTO</a></li>
 				  <li class="dropdown">
 				    <a href="javascript:void(0)" class="dropbtn">EMOTION</a>
 				  	<div class="dropdown-content"><!--1.-->
 				      <a href="#">DEPRESSION</a>
-				      <a href="#">UNREST</a>
+				      <a href="#">NERVOUS</a>
 				      <a href="#">SADNESS</a>
 				  	</div>
 				  </li>
@@ -36,7 +42,7 @@
 				<div class="music">
 				  	<audio  id="myAudio"controls autoplay>
 				  	<!--<source src="sad.ogg" type="audio/ogg">-->
-				  	<source src="music.mp3" type="audio/mpeg">
+				  	<source src="../mp3/music.mp3" type="audio/mpeg">
 					Your browser does not support the audio element.
 				</audio>
 			</div>
@@ -49,11 +55,15 @@
 			</div>
 			<div class="icon">
 				<span>
-				<img src="icon.jpeg">
+				<img src="../image/icon.jpeg">
 				</span>
 			</div>
 			
 		</article>
+	
+
+	<script src="main.js"></script>
+
 
 
 	</div>
